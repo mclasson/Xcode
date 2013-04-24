@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="EXr-hC-zUm">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Tweet List View Controller-->
+        <scene sceneID="wl6-Kg-QAc">
+            <objects>
+                <tableViewController id="CLU-bZ-Mwy" customClass="TweetListViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="89" sectionHeaderHeight="22" sectionFooterHeight="22" id="xm4-Hr-7xF">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tweet" rowHeight="89" id="3hO-ua-R6a">
+                                <rect key="frame" x="0.0" y="22" width="768" height="89"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="88"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="TopLeft" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="705" translatesAutoresizingMaskIntoConstraints="NO" id="5o5-7A-TNs">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="41" id="hV1-Tu-OES"/>
+                                                <constraint firstAttribute="width" constant="705" id="iTD-5q-fRi"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGC-CS-sSS">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="400" id="Iak-Lf-UKh"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8k-ur-3uO">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="217" id="jZ0-q6-vlk"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="J8k-ur-3uO" firstAttribute="baseline" secondItem="TGC-CS-sSS" secondAttribute="baseline" type="default" id="6Ct-P5-BHl"/>
+                                    <constraint firstAttribute="trailing" secondItem="5o5-7A-TNs" secondAttribute="trailing" constant="20" type="default" id="FgX-g5-yxg"/>
+                                    <constraint firstItem="TGC-CS-sSS" firstAttribute="leading" secondItem="5o5-7A-TNs" secondAttribute="leading" type="default" id="Mag-aA-uOR"/>
+                                    <constraint firstAttribute="trailing" secondItem="J8k-ur-3uO" secondAttribute="trailing" constant="20" type="default" id="koQ-E5-nxN"/>
+                                    <constraint firstItem="TGC-CS-sSS" firstAttribute="top" secondItem="5o5-7A-TNs" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="kwZ-ZW-j4f"/>
+                                    <constraint firstItem="5o5-7A-TNs" firstAttribute="top" secondItem="3hO-ua-R6a" secondAttribute="top" constant="11" id="zBS-CF-hFd"/>
+                                </constraints>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="CLU-bZ-Mwy" id="tmI-xy-4ua"/>
+                            <outlet property="delegate" destination="CLU-bZ-Mwy" id="hDA-4f-6uD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="jIe-k5-ir4"/>
+                    <connections>
+                        <outlet property="tweetsTable" destination="xm4-Hr-7xF" id="6Fr-Og-UNf"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="joD-DL-v2e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072" y="-128"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="z5q-Pl-fH2">
+            <objects>
+                <viewController id="4hh-uo-wlA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aSw-pt-kvt">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="evs-Ly-1YO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PVz-MM-iTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1891" y="-92"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Kvy-Vg-mp4">
+            <objects>
+                <navigationController id="EXr-hC-zUm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nhK-Hd-zvb">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CLU-bZ-Mwy" kind="relationship" relationship="rootViewController" id="cRg-Ux-UmL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U17-Eo-DKo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="-128"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TweetListViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TweetListViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tweetsTable" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

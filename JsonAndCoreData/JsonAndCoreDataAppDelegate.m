@@ -7,7 +7,7 @@
 //
 
 #import "JsonAndCoreDataAppDelegate.h"
-
+#import "protocols.h"
 @implementation JsonAndCoreDataAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -16,10 +16,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+    id<Controller> controller = (id<Controller>)navigationController.topViewController;
+    controller.managedObjectContext = self.managedObjectContext;
+    controller.persistentStoreCoordinator = self.persistentStoreCoordinator;
     return YES;
 }
 

@@ -24,6 +24,13 @@
 		2CCDE3F717280584003200F0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCDE3D617280584003200F0 /* CoreData.framework */; };
 		2CCDE3FF17280584003200F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CCDE3FD17280584003200F0 /* InfoPlist.strings */; };
 		2CCDE40217280584003200F0 /* JsonAndCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCDE40117280584003200F0 /* JsonAndCoreDataTests.m */; };
+		2CCDE40C172807FE003200F0 /* StoryboardForiPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCDE40B172807FE003200F0 /* StoryboardForiPad.storyboard */; };
+		2CCDE40E17280C0E003200F0 /* StoryboardForiPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCDE40D17280C0E003200F0 /* StoryboardForiPhone.storyboard */; };
+		2CCDE41917283847003200F0 /* TwitterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCDE41817283847003200F0 /* TwitterHelper.m */; };
+		2CCDE41C172855EE003200F0 /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCDE41B172855EE003200F0 /* Client.m */; };
+		2CCDE42317285C60003200F0 /* TweetListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCDE42217285C60003200F0 /* TweetListViewController.m */; };
+		2CCDE42717287A41003200F0 /* DateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCDE42617287A41003200F0 /* DateUtils.m */; };
+		2CCDE42A1728867C003200F0 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCDE4291728867C003200F0 /* Tweet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +65,19 @@
 		2CCDE3FE17280584003200F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2CCDE40017280584003200F0 /* JsonAndCoreDataTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonAndCoreDataTests.h; sourceTree = "<group>"; };
 		2CCDE40117280584003200F0 /* JsonAndCoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonAndCoreDataTests.m; sourceTree = "<group>"; };
+		2CCDE40B172807FE003200F0 /* StoryboardForiPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardForiPad.storyboard; sourceTree = "<group>"; };
+		2CCDE40D17280C0E003200F0 /* StoryboardForiPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardForiPhone.storyboard; sourceTree = "<group>"; };
+		2CCDE41717283847003200F0 /* TwitterHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterHelper.h; sourceTree = "<group>"; };
+		2CCDE41817283847003200F0 /* TwitterHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterHelper.m; sourceTree = "<group>"; };
+		2CCDE41A172855EE003200F0 /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		2CCDE41B172855EE003200F0 /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Client.m; sourceTree = "<group>"; };
+		2CCDE41D17285647003200F0 /* protocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = protocols.h; sourceTree = "<group>"; };
+		2CCDE42117285C60003200F0 /* TweetListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetListViewController.h; sourceTree = "<group>"; };
+		2CCDE42217285C60003200F0 /* TweetListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetListViewController.m; sourceTree = "<group>"; };
+		2CCDE42517287A41003200F0 /* DateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtils.h; sourceTree = "<group>"; };
+		2CCDE42617287A41003200F0 /* DateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtils.m; sourceTree = "<group>"; };
+		2CCDE4281728867C003200F0 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
+		2CCDE4291728867C003200F0 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,10 +140,16 @@
 		2CCDE3D817280584003200F0 /* JsonAndCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				2CCDE42417287A18003200F0 /* Utils */,
+				2CCDE42017285C31003200F0 /* controllers */,
+				2CCDE41617283752003200F0 /* classes */,
+				2CCDE40F17283606003200F0 /* Entities */,
 				2CCDE3E117280584003200F0 /* JsonAndCoreDataAppDelegate.h */,
 				2CCDE3E217280584003200F0 /* JsonAndCoreDataAppDelegate.m */,
 				2CCDE3EA17280584003200F0 /* JsonAndCoreData.xcdatamodeld */,
 				2CCDE3D917280584003200F0 /* Supporting Files */,
+				2CCDE40B172807FE003200F0 /* StoryboardForiPad.storyboard */,
+				2CCDE40D17280C0E003200F0 /* StoryboardForiPhone.storyboard */,
 			);
 			path = JsonAndCoreData;
 			sourceTree = "<group>";
@@ -159,6 +185,45 @@
 				2CCDE3FD17280584003200F0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CCDE40F17283606003200F0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2CCDE4281728867C003200F0 /* Tweet.h */,
+				2CCDE4291728867C003200F0 /* Tweet.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		2CCDE41617283752003200F0 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				2CCDE41717283847003200F0 /* TwitterHelper.h */,
+				2CCDE41817283847003200F0 /* TwitterHelper.m */,
+				2CCDE41A172855EE003200F0 /* Client.h */,
+				2CCDE41B172855EE003200F0 /* Client.m */,
+				2CCDE41D17285647003200F0 /* protocols.h */,
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
+		2CCDE42017285C31003200F0 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2CCDE42117285C60003200F0 /* TweetListViewController.h */,
+				2CCDE42217285C60003200F0 /* TweetListViewController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		2CCDE42417287A18003200F0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2CCDE42517287A41003200F0 /* DateUtils.h */,
+				2CCDE42617287A41003200F0 /* DateUtils.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +302,8 @@
 				2CCDE3E517280584003200F0 /* Default.png in Resources */,
 				2CCDE3E717280584003200F0 /* Default@2x.png in Resources */,
 				2CCDE3E917280584003200F0 /* Default-568h@2x.png in Resources */,
+				2CCDE40C172807FE003200F0 /* StoryboardForiPad.storyboard in Resources */,
+				2CCDE40E17280C0E003200F0 /* StoryboardForiPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +341,11 @@
 				2CCDE3DF17280584003200F0 /* main.m in Sources */,
 				2CCDE3E317280584003200F0 /* JsonAndCoreDataAppDelegate.m in Sources */,
 				2CCDE3EC17280584003200F0 /* JsonAndCoreData.xcdatamodeld in Sources */,
+				2CCDE41917283847003200F0 /* TwitterHelper.m in Sources */,
+				2CCDE41C172855EE003200F0 /* Client.m in Sources */,
+				2CCDE42317285C60003200F0 /* TweetListViewController.m in Sources */,
+				2CCDE42717287A41003200F0 /* DateUtils.m in Sources */,
+				2CCDE42A1728867C003200F0 /* Tweet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +452,7 @@
 				GCC_PREFIX_HEADER = "JsonAndCoreData/JsonAndCoreData-Prefix.pch";
 				INFOPLIST_FILE = "JsonAndCoreData/JsonAndCoreData-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,6 +464,7 @@
 				GCC_PREFIX_HEADER = "JsonAndCoreData/JsonAndCoreData-Prefix.pch";
 				INFOPLIST_FILE = "JsonAndCoreData/JsonAndCoreData-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
